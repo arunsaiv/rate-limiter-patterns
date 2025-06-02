@@ -1,4 +1,4 @@
-# rate_limiter_patterns
+# Rate Limiter Patterns
 
 A practical Python project demonstrating different rate limiting algorithms and patterns. This repo helps developers understand how rate limiting works under the hood, why it’s important, and how to implement it for real-world use cases.
 
