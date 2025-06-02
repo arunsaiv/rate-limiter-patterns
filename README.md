@@ -93,5 +93,9 @@ MIT
 
 ---
 
-## 💬 Feedback
-If you find this useful, give it a ⭐ on GitHub, and feel free to reach out or open an issue for improvements!
+## ❤️ Like the Project?
+
+If you found this helpful:
+-	⭐ Star the repo
+-	📢 Share with others
+-	🧠 Contribute ideas or patterns
