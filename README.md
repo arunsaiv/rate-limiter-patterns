@@ -9,13 +9,15 @@ Rate limiting is a technique used to control the amount of incoming or outgoing 
 
 ---
 
-## 🚦 Included Algorithms
+## 📦 Patterns Implemented
 
-1. **Fixed Window Counter**
-2. **Sliding Window Log**
-3. **Sliding Window Counter**
-4. **Token Bucket**
-5. **Leaky Bucket**
+| Pattern           | Description |
+|------------------|-------------|
+| ✅ **Fixed Window**     | Allows a set number of requests in a fixed interval (e.g., 10/minute). |
+| ✅ **Rolling Window**   | Similar to fixed but rolls over the interval dynamically. |
+| ✅ **Leaky Bucket**     | Enforces a constant outflow rate, handling bursts smoothly. |
+| ✅ **Token Bucket**     | Allows bursts and refills tokens over time. |
+| ✅ **Distributed Rate Limiting (Redis)** | Ensures rate limits across multiple services/nodes. |
 
 ---
 
@@ -24,16 +26,14 @@ Rate limiting is a technique used to control the amount of incoming or outgoing 
 ```
 rate_limiter_patterns/
 ├── fixed_window.py
-├── sliding_window_log.py
-├── sliding_window_counter.py
+├── sliding_window.py
+├── distributed_token_bucket.py
 ├── token_bucket.py
 ├── leaky_bucket.py
 ├── tests/
 │   ├── test_fixed_window.py
-│   ├── test_sliding_window_log.py
+│   ├── test_sliding_window.py
 │   └── ...
-├── examples/
-│   ├── api_rate_limit_example.py
 ├── README.md
 └── requirements.txt
 ```
@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 4. Run any algorithm script directly:
 ```bash
-python token_bucket.py
+python test_token_bucket.py
 ```
 
 ---
@@ -79,7 +79,7 @@ python token_bucket.py
 ```
 # requirements.txt
 ```
-(This will be updated as we add dependencies, currently only using built-in modules)
+(This will be need only if you are installing redis for distributed token bucket rate limiter)
 
 ---
 
