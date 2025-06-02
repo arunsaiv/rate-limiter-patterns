@@ -1,0 +1,49 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venc/
+env/
+.venc/
+.env/
+
+# VS Code
+.vscode/
+
+# macOS specific
+.DS_Store
+
+# Environment variables and secret files
+.env
+*.env
+
+# Test and coverage files
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# Redis dump (if generated)
+dump.rdb
+appendonly.aof
+
+# Pytest
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# MyPy
+.mypy_cache/
+
+# Other common Python tooling
+pip-log.txt
+pip-delete-this-directory.txt
